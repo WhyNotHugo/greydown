@@ -33,7 +33,7 @@ def set_colour(lines, percentage):
 
     for line in lines:
         if line.startswith("s0_saturation_values"):
-            target_lines.append("s0_saturation_values = {};"
+            target_lines.append("s0_saturation_values = {};\n"
                                 .format(percentage))
         else:
             target_lines.append(line)
